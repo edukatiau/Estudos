@@ -32,4 +32,8 @@ public class Usuario{
         return senha;
     }
 
+    public String toString(){
+        return "Usuario [name= " +nome+ ", idade= " +idade+ ", login= " +login+ ", senha= " +senha+ "]";
+    }
+
 }
