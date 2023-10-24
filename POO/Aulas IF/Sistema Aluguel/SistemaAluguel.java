@@ -16,7 +16,10 @@ public class Main{
 
         for(Usuario u: usuarios){
             if(log.equals(u.getLogin()) && pass.equals(u.getSenha())){
-                System.out.println("Logado");
+                System.out.println("Logado.");
+            }
+            else{
+                System.out.println("Login ou Senha incorreto.")
             }
         }
     }
