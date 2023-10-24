@@ -6,6 +6,7 @@ public class SistemaAluguel{
         List<Usuario> usuarios = new ArrayList<Usuario>;
 
         usuarios.add(new Usuario("edu", "edu", "123"));
+        login(usuarios);
     }
 
     public static login(ArrayList<Usuario> usuarios){
