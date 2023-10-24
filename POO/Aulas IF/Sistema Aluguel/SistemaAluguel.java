@@ -1,21 +1,22 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SistemaAluguel{
+public class Main{
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args){
-        List<Usuario> usuarios = new ArrayList<Usuario>;
+        ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 
         usuarios.add(new Usuario("edu", "edu", "123"));
         login(usuarios);
     }
 
-    public static login(ArrayList<Usuario> usuarios){
-        String log = sc.next();
-        String pass = sc.next();
+    public static void login(ArrayList<Usuario> usuarios){
+        String log = sc.nextLine();
+        String pass = sc.nextLine();
 
         for(Usuario u: usuarios){
             if(log.equals(u.getLogin()) && pass.equals(u.getSenha())){
-                System.out.println("Logado")
+                System.out.println("Logado");
             }
         }
     }
