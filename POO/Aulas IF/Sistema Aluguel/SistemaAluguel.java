@@ -6,10 +6,8 @@ import java.util.Scanner;
   static ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
     
   public static void main(String[] args){
-    // Declara a variável usuarios
-    //ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 
-    // Adiciona um usuário ao ArrayList
+    // Adiciona um usuário de teste ao ArrayList
     usuarios.add(new Usuario("edu", "edu", "123"));
 
     // Chama o método menu()
