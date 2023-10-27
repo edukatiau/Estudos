@@ -1,10 +1,15 @@
+import java.util.ArrayList;
+
 public class Usuario{
 
     private String nome;
     private String login;
     private String senha;
+    private ArrayList<Veiculo> meusVeiculos = new ArrayList<Veiculo>();
 
-    public Usuario(String nome, String login, String senha){
+
+
+	public Usuario(String nome, String login, String senha){
         this.nome = nome;
         this.login = login;
         this.senha = senha;
@@ -34,6 +39,18 @@ public class Usuario{
         this.senha = newSenha;
     }
 
+    public ArrayList<Veiculo> getMeusVeiculos() {
+      return meusVeiculos;
+    }
+  
+    public void addMeusVeiculos(Veiculo veiculo) {
+      this.meusVeiculos.add(veiculo);
+    }
+
+    public void deleteMeusVeiculos(){
+      this.meusVeiculos.clear();
+    }
+  
     @Override
     public String toString(){
         return "Usuario [name= " +nome+ ", login= " +login+ ", senha= " +senha+ "]";
